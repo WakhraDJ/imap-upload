@@ -243,7 +243,7 @@ def recursive_upload(imap, box, src, err, time_fields):
             else:
                 subbox = box + "/" + fileName
             recursive_upload(imap, subbox, path, err, time_fields)
-        elif file.endswith("mbox"):
+        elif:
             print >>sys.stderr, "Found mailbox at {}...".format(path)
             mbox = mailbox.mbox(path, create=False)
             if err:
